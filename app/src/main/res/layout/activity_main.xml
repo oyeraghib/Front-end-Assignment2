@@ -42,15 +42,6 @@
   </LinearLayout>
 
 
-  <!--  <ScrollView-->
-  <!--      android:id="@+id/scrollView"-->
-  <!--      android:layout_width="match_parent"-->
-  <!--      android:layout_height="match_parent"-->
-  <!--      -->
-  <!--      android:layout_marginTop="8dp"-->
-  <!--      >-->
-
-
   <androidx.cardview.widget.CardView
       android:layout_below="@+id/topLinearLayout"
       android:id="@+id/cardViewTopics"
@@ -94,143 +85,25 @@
     </LinearLayout>
 
   </androidx.cardview.widget.CardView>
-
-
-  <androidx.cardview.widget.CardView
+  <ScrollView
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_below="@id/cardViewTopics"
-      android:layout_marginTop="12dp"
-      >
-
+      android:layout_height="match_parent"
+      android:fillViewport="true"
+      android:scrollbars="none">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal"
-          android:layout_margin="16dp"
-          >
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/img_profile"
-            />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="match_parent"
-              android:text="Shruti Singh"
-              android:textColor="@color/black"
-              android:textStyle="bold"
-              android:layout_marginLeft="8dp"
-              />
-
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="match_parent"
-              android:text="Mar 03"
-              android:textColor="#515050"
-              android:layout_marginLeft="8dp"
-              />
+        android:orientation="vertical">
 
 
-        </LinearLayout>
 
-        <ImageView
-            android:layout_width="0dp"
-          android:layout_weight="0.2"
-            android:layout_height="wrap_content"
-          android:src="@drawable/ic_options"/>
+    <include layout="@layout/feed_layout" />
+    <include layout="@layout/feed_layout" />
 
-      </LinearLayout>
+    <include layout="@layout/feed_layout" />
+    <include layout="@layout/feed_layout" />
+    </LinearLayout></ScrollView>
 
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-        android:text="After Jio Google now likely to invest $1 billopn in Airtel"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_margin="8dp"/>
-
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="After making large investments in Jio, Google is now planning to invest
-money in Airtel through a mix of equity and commercail partnerships in areas like..."
-          android:textSize="14sp"
-          android:textColor="@color/black"
-          android:layout_margin="8dp"/>
-
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-        android:text="3 Inspired"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="48dp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:backgroundTint="@color/black"/>
-
-      <LinearLayout
-        android:orientation="horizontal"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:layout_margin="8dp"
-          android:gravity="center_horizontal"
-        >
-
-        <TextView
-            android:layout_width="0dp"
-          android:layout_weight="1"
-            android:layout_height="wrap_content"
-          android:text="Inspiring"
-          android:drawableLeft="@drawable/ic_inspiring"
-          android:textSize="12sp"
-            android:gravity="center_vertical" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Comment"
-            android:drawableLeft="@drawable/ic_comment"
-            android:textSize="12sp"
-            android:gravity="center_vertical" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Share"
-            android:drawableLeft="@drawable/ic_share"
-            android:textSize="12sp"
-            android:gravity="center_vertical" />
-
-
-      </LinearLayout>
-
-
-    </LinearLayout>
-
-  </androidx.cardview.widget.CardView>
-
-  <!--  </ScrollView>-->
 
 
 </RelativeLayout>
