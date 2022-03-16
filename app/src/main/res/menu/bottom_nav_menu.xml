@@ -7,17 +7,17 @@
 
   <item
       android:id="@+id/connect"
-      android:title="Home"
+      android:title="Connect"
       android:icon="@drawable/ic_connect" />
 
   <item
       android:id="@+id/notification"
-      android:title="Home"
+      android:title="Notification"
       android:icon="@drawable/ic_notifications" />
 
   <item
       android:id="@+id/profile"
-      android:title="Home"
+      android:title="Profile"
       android:icon="@drawable/ic_profile" />
 
 

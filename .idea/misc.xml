@@ -9,10 +9,16 @@
         <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/drawable/ic_profile.xml" value="0.2555" />
         <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/drawable/ic_search.xml" value="0.1" />
         <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/drawable/shape_oval_edit_text.xml" value="0.1" />
-        <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/layout/feed_layout.xml" value="0.176" />
+        <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.25" />
+        <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/layout/fragment_connect.xml" value="0.2203125" />
+        <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/layout/fragment_notification.xml" value="0.2203125" />
+        <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/layout/fragment_profile.xml" value="0.234375" />
+        <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/layout/toolbar_layout.xml" value="0.25" />
         <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/layout/topics_card_view.xml" value="0.25" />
         <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/layout/topics_card_view_physics.xml" value="0.25" />
+        <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/layout/topics_card_view_startup.xml" value="0.25" />
         <entry key="..\:/Flutter Projs/FrontendAssignment2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
       </map>
     </option>
