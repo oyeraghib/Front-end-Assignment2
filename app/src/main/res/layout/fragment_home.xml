@@ -7,58 +7,81 @@
     tools:context=".MainActivity"
     android:id="@+id/coordinator_layout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     >
 
-  <com.google.android.material.appbar.AppBarLayout
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/appBar"
-      android:backgroundTint="@color/white"
+      android:layout_height="match_parent"
+      android:id="@+id/coordinator"
       >
 
-    <include layout="@layout/toolbar_layout" />
-
-  </com.google.android.material.appbar.AppBarLayout>
-
-  <androidx.cardview.widget.CardView
-      android:layout_below="@+id/appBar"
-      android:id="@+id/cardViewTopics"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:backgroundTint="#6AFD4D4D"
-      app:layout_behavior="@string/appbar_scrolling_view_behavior"
-      >
-
-    <include layout="@layout/card_view_startup" />
-
-  </androidx.cardview.widget.CardView>
-
-
-  <ScrollView
-      android:id="@+id/scrollView"
-      android:layout_below="@+id/cardViewTopics"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:fillViewport="true"
-      android:scrollbars="none"
-
-      >
-    <LinearLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/appBar"
+        android:backgroundTint="@color/white"
         >
 
+      <include layout="@layout/toolbar_layout" />
 
-      <include layout="@layout/feed_layout" />
-      <include layout="@layout/feed_layout" />
-      <include layout="@layout/feed_layout" />
-      <include layout="@layout/feed_layout" />
-    </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
-  </ScrollView>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <androidx.cardview.widget.CardView
+          android:layout_below="@+id/coordinator"
+          android:id="@+id/cardViewTopics"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:backgroundTint="#6AFD4D4D"
+          app:layout_behavior="@string/appbar_scrolling_view_behavior"
+          >
+
+        <include layout="@layout/card_view_startup" />
+
+      </androidx.cardview.widget.CardView>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          app:layout_behavior="@string/appbar_scrolling_view_behavior"
+          >
+
+
+        <include layout="@layout/feed_layout" />
+        <include layout="@layout/feed_layout" />
+        <include layout="@layout/feed_layout" />
+        <include layout="@layout/feed_layout" />
+      </LinearLayout>
+
+      </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pen"
+        android:backgroundTint="@color/white"
+        app:layout_anchor="@id/appBar"
+        app:layout_anchorGravity="end|bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        />
+
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
 </RelativeLayout>

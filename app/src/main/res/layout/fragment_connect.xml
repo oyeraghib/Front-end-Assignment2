@@ -6,11 +6,11 @@
     tools:context=".fragments.ConnectFragment"
     >
 
-  <!-- TODO: Update blank fragment layout -->
   <TextView
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:text="@string/hello_blank_fragment"
+      android:text="This Is Connect Fragment"
+      android:gravity="center"
+      android:textSize="20sp"
       />
-
 </FrameLayout>

@@ -26,5 +26,5 @@
       android:id="@+id/profile"
       android:name="com.example.front_endassignment2.fragments.ProfileFragment"
       android:label="fragment_profile"
-      tools:layout="@layout/fragment_bottom_sheet" />
+      tools:layout="@layout/fragment_profile_bottom_sheet" />
 </navigation>
