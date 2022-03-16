@@ -6,9 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.front_endassignment2.R
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 
-class ProfileFragment : Fragment() {
+class ProfileFragment : BottomSheetDialogFragment() {
 
 
     override fun onCreateView(
@@ -16,7 +17,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        return inflater.inflate(R.layout.fragment_bottom_sheet, container, false)
     }
 
 }

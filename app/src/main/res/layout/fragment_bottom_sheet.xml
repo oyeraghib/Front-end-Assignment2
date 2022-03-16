@@ -1,16 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.BottomSheetFragment"
+    android:orientation="vertical"
     >
 
-  <!-- TODO: Update blank fragment layout -->
-  <TextView
+  <LinearLayout
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:text="@string/hello_blank_fragment"
-      />
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_margin="8dp"
+      >
 
-</FrameLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/img_profile"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Akash Sharma"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          android:textSize="24sp"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="View Profile"
+          android:fontFamily="sans-serif"
+          android:layout_marginTop="4dp"
+          />
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="wrap_content"
+      android:layout_height="2dp"
+      android:background="#43736C6C"
+      android:layout_marginTop="8dp"
+      android:layout_marginLeft="12dp"
+      android:layout_marginRight="12dp"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="My Posts"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="16dp"
+    android:drawableLeft="@drawable/ic_pen"
+    android:textSize="16sp"
+    android:textColor="@color/black" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="My Groups"
+      android:layout_marginLeft="12dp"
+      android:layout_marginTop="16dp"
+      android:drawableLeft="@drawable/ic_groups"
+      android:textSize="16sp"
+      android:textColor="@color/black" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="My Location"
+      android:layout_marginLeft="12dp"
+      android:layout_marginTop="16dp"
+      android:drawableLeft="@drawable/ic_location"
+      android:textSize="16sp"
+      android:textColor="@color/black" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Share App"
+      android:layout_marginLeft="12dp"
+      android:layout_marginTop="16dp"
+      android:drawableLeft="@drawable/ic_share"
+      android:textSize="16sp"
+      android:textColor="@color/black" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Settings &amp; Privacy"
+      android:layout_marginLeft="12dp"
+      android:layout_marginTop="16dp"
+      android:drawableLeft="@drawable/ic_settings"
+      android:textSize="16sp"
+      android:textColor="@color/black" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Give Feedback"
+      android:layout_marginLeft="12dp"
+      android:layout_marginTop="16dp"
+      android:drawableLeft="@drawable/ic_feedback"
+      android:textSize="16sp"
+      android:textColor="@color/black" />
+
+
+
+
+
+</LinearLayout>
