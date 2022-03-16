@@ -61,7 +61,7 @@
       android:layout_height="wrap_content"
     android:text="My Posts"
     android:layout_marginLeft="12dp"
-    android:layout_marginTop="16dp"
+    android:layout_marginTop="24dp"
     android:drawableLeft="@drawable/ic_pen"
     android:textSize="16sp"
     android:textColor="@color/black" />
@@ -71,7 +71,7 @@
       android:layout_height="wrap_content"
       android:text="My Groups"
       android:layout_marginLeft="12dp"
-      android:layout_marginTop="16dp"
+      android:layout_marginTop="24dp"
       android:drawableLeft="@drawable/ic_groups"
       android:textSize="16sp"
       android:textColor="@color/black" />
@@ -81,7 +81,7 @@
       android:layout_height="wrap_content"
       android:text="My Location"
       android:layout_marginLeft="12dp"
-      android:layout_marginTop="16dp"
+      android:layout_marginTop="24dp"
       android:drawableLeft="@drawable/ic_location"
       android:textSize="16sp"
       android:textColor="@color/black" />
@@ -91,7 +91,7 @@
       android:layout_height="wrap_content"
       android:text="Share App"
       android:layout_marginLeft="12dp"
-      android:layout_marginTop="16dp"
+      android:layout_marginTop="24dp"
       android:drawableLeft="@drawable/ic_share"
       android:textSize="16sp"
       android:textColor="@color/black" />
@@ -101,7 +101,7 @@
       android:layout_height="wrap_content"
       android:text="Settings &amp; Privacy"
       android:layout_marginLeft="12dp"
-      android:layout_marginTop="16dp"
+      android:layout_marginTop="24dp"
       android:drawableLeft="@drawable/ic_settings"
       android:textSize="16sp"
       android:textColor="@color/black" />
@@ -111,8 +111,18 @@
       android:layout_height="wrap_content"
       android:text="Give Feedback"
       android:layout_marginLeft="12dp"
-      android:layout_marginTop="16dp"
+      android:layout_marginTop="24dp"
       android:drawableLeft="@drawable/ic_feedback"
+      android:textSize="16sp"
+      android:textColor="@color/black" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Sign Out"
+      android:layout_marginLeft="12dp"
+      android:layout_marginTop="24dp"
+      android:drawableLeft="@drawable/ic_signout"
       android:textSize="16sp"
       android:textColor="@color/black" />
 
