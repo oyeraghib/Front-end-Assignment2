@@ -1,61 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.amar.library.ui.StickyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
-    android:id="@+id/coordinator_layout"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:stickyHeader="@+id/cardViewTopics"
+
     >
 
-  <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+  <LinearLayout
+      android:id="@+id/linearLayout"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:id="@+id/coordinator"
+      android:orientation="vertical"
       >
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/appBar"
-        android:backgroundTint="@color/white"
-        >
-
-      <include layout="@layout/toolbar_layout" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <com.amar.library.ui.StickyScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:stickyHeader="@+id/title"
-        app:stickyFooter="@+id/buttons">
-
-    </com.amar.library.ui.StickyScrollView>
-
-
-
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-        >
-
-      <LinearLayout
-          android:layout_width="wrap_content"
+      <com.google.android.material.appbar.AppBarLayout
+          android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:orientation="vertical"
+          android:id="@+id/appBar"
+          android:backgroundTint="@color/white"
           >
 
+        <include layout="@layout/toolbar_layout" />
+
+      </com.google.android.material.appbar.AppBarLayout>
+
         <androidx.cardview.widget.CardView
-            android:layout_below="@+id/coordinator"
             android:id="@+id/cardViewTopics"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#6AFD4D4D"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:backgroundTint="#FD4D4D"
             >
 
           <include layout="@layout/card_view_startup" />
@@ -76,24 +54,9 @@
           <include layout="@layout/feed_layout" />
         </LinearLayout>
 
-      </LinearLayout>
 
-    </androidx.core.widget.NestedScrollView>
+  </LinearLayout>
 
+</com.amar.library.ui.StickyScrollView>
 
-  </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-  <com.google.android.material.floatingactionbutton.FloatingActionButton
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:src="@drawable/ic_pen"
-      android:backgroundTint="@color/white"
-      android:layout_marginBottom="80dp"
-      android:layout_marginRight="30dp"
-      android:layout_alignParentBottom="true"
-      android:layout_alignParentRight="true"
-      />
-
-
-</RelativeLayout>
 
