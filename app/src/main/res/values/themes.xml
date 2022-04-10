@@ -14,6 +14,15 @@
     <!-- Customize your theme here. -->
   </style>
 
+  <style name="bottomSheetDialog" parent="Theme.Design.BottomSheetDialog">
+    <item name="bottomSheetStyle">@style/bottomSheetDialogStyle</item>
+  </style>
+
+  <style name="bottomSheetDialogStyle" parent="Widget.Design.BottomSheet.Modal">
+    <item name="android:layout_marginStart">20dp</item>
+    <item name="android:layout_marginEnd">20dp</item>
+  </style>
+
   <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
     <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
   </style>
@@ -21,5 +30,17 @@
   <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
     <item name="behavior_peekHeight">350dp</item>
     <item name="android:layout_margin">30dp</item>
+    <item name="cornerRadius">20dp</item>
   </style>
+
+
+  <style name="Theme.NoWiredStrapInNavigationBar" parent="@style/Theme.Design.BottomSheetDialog">
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+  </style>
+
+  <style name="NoBackgroundDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+    <item name="android:windowBackground">@null</item>
+  </style>
+
 </resources>
